@@ -1,0 +1,15 @@
+inherit rubygem
+
+NAME="ruby-rails-dom-testing"
+VERSION=1.0.6
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Rails DOM element testing module"
+DESCRIPTION="This gem can compare DOMs and assert certain elements exists in
+DOMs using Nokogiri."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_rails_dom_testing_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_rails_dom_testing_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
